@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz GPOI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="quiz-card">
+            <div id="quiz-content">
+                <div class="question-header">
+                    <div class="question-number" id="question-number">Domanda 1 su 3</div>
+                    <div class="question-text" id="question-text"></div>
+                </div>
+                <div class="answers-grid" id="answers-grid"></div>
+                <div class="feedback" id="feedback"></div>
+                <button class="next-btn hidden" id="next-btn">prosegui</button>
+                <div class="score" id="score">Punteggio: 0</div>
+            </div>
+            <div id="final-screen" class="final-score hidden">
+                <h2>quiz completato</h2>
+                <div class="score-display" id="final-score"></div>
+                <button class="restart-btn" onclick="restartQuiz()">riprova</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
